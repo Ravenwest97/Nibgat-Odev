@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    background-color: gray;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    background: silver;
+    padding: 2.5rem 3rem;
+    border-radius: 2rem;
+}
+
+.container .title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    position: relative;
+}
+
+.container .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.3rem;
+    width: 3rem;
+}
+
+.container form .kullanıcı-bilgileri {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .kullanıcı-bilgileri .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.kullanıcı-bilgileri .input-box .detaylar {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.kullanıcı-bilgileri .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid gold;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+form .cinsiyetler .cinsiyet-basliklari {
+    font-size: auto;
+    font-weight: 500;
+
+}
+
+form .cinsiyetler .kategori {
+    width: auto;
+    margin-top: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.cinsiyetler {
+    padding-right: 150px;
+}
+
+#textarea {
+    resize: none;
+    max-width: 500px;
+    max-height: 150px;
+    min-width: 500px;
+    min-height: 100px;
+    overflow: auto;
+}
+
+.button button {
+    background-color: gray;
+    color: white;
+    padding: 12px 24px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+}
+
+.button button:hover {
+    background-color: black; 
+    transform: scale(1.05);
+}
+
+.button button:active {
+    background-color: gold; 
+        transform: scale(0.98); 
+    }

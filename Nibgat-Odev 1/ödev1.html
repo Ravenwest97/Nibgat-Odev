@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kayıt Ol</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Kayıt Ol</div>
+      <form action="#">
+        <div class="kullanıcı-bilgileri">
+          <div class="input-box">
+            <span class="detaylar">Ad</span>
+            <input type="text" placeholder="İsminizi Giriniz" required />
+          </div>
+          <div class="input-box">
+            <span class="detaylar">Soyad</span>
+            <input type="text" placeholder="Soy İsminizi Giriniz" required />
+          </div>
+          <div class="input-box">
+            <span class="detaylar">E-Mail</span>
+            <input type="email" placeholder="E-Mailinizi Giriniz" required />
+          </div>
+          <div class="input-box">
+            <span class="detaylar">Telefon</span>
+            <input type="text" placeholder="Telefon Numaranızı Giriniz" required />
+          </div>
+          <div class="input-box">
+            <span class="detaylar">Doğum Tarihi</span>
+            <input type="date" required />
+          </div>
+          <div class="cinsiyetler">
+            <span class="cinsiyet-basliklari">Cinsiyet</span>
+            <div class="kategori">
+              <label for="erkek">
+                <input type="radio" id="erkek" name="cinsiyet" value="erkek" />
+                <span class="cinsiyet">Erkek</span>
+              </label>
+              <label for="kadın">
+                <input type="radio" id="kadın" name="cinsiyet" value="kadın" />
+                <span class="cinsiyet">Kadın</span>
+              </label>
+            </div>
+          </div>
+          <div class="input-box">
+            <span class="detaylar">Mesajınız</span>
+            <textarea id="textarea" name="textarea" placeholder="Mesajınızı Giriniz" rows="4" cols="50" required></textarea>
+          </div>
+        </div>
+        <div class="button">
+         <button onclick="test()">Gönder</button>
+                <script src="script.js"></script>
+        </div>
+      </form>
+    </div>
+   </body>
+  </html>
